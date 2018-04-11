@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive UI Example</title>
+</head>
+<body>
+<div class="mdc-components">
+    <div class="mdc-components__section">
+        <div class="mdc-components__column">
+            <div>
+                <div class="mdc-component mdc-component__buttons">
+                    <p>Buttons</p>
+                    <div class="mdc-component__section">
+                        <div class="mdc-component__containers">
+                            <div class="mdc-component__containers__primary">
+                                <p>Primary</p>
+                                <button class="mdc-fab material-icons" aria-label="Add"><span
+                                        class="mdc-fab__icon">add</span></button>
+                                <button class="mdc-fab material-icons mdc-fab--plain" aria-label="Add"><span
+                                        class="mdc-fab__icon">add</span></button>
+                                <button
+                                        type="button" class="mdc-button mdc-button--plain">Normal
+                                </button>
+                                <button type="button" class="mdc-button mdc-button--raised">Normal</button>
+                            </div>
+                            <div class="mdc-component__containers__secondary">
+                                <p>Secondary</p>
+                                <button class="mdc-fab material-icons" aria-label="Add"><span
+                                        class="mdc-fab__icon">add</span></button>
+                                <button class="mdc-fab material-icons mdc-fab--plain" aria-label="Add"><span
+                                        class="mdc-fab__icon">add</span></button>
+                                <button type="button" class="mdc-button mdc-button--plain">Normal</button>
+                                <button type="button" class="mdc-button mdc-button--raised">Normal</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="flex"></span>
+            <div>
+                <div class="mdc-component mdc-component__selection">
+                    <p>Selection</p>
+                    <div class="mdc-component__section mdc-component__section--size-narrow">
+                        <div dir-horizontal="" class="mdc-component__containers">
+                            <div class="mdc-component__containers__primary">
+                                <p style="position: absolute; left: 16px; padding-bottom: 40px;">Primary</p>
+                                <div class="mdc-snackbar" aria-live="assertive" aria-atomic="true" aria-hidden="true">
+                                    <div class="mdc-snackbar__text">Single-line snackbar</div>
+                                    <div class="mdc-snackbar__action-wrapper">
+                                        <button type="button" class="mdc-button mdc-snackbar__action-button"
+                                                style="color: rgb(244, 67, 54);">Action
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-component__containers__secondary">
+                                <p style="position: absolute; left: 16px; padding-top: 52px;">Secondary</p>
+                                <div class="mdc-snackbar mdc-snackbar__secondary" aria-live="assertive"
+                                     aria-atomic="true" aria-hidden="true">
+                                    <div class="mdc-snackbar__text">Single-line snackbar</div>
+                                    <div class="mdc-snackbar__action-wrapper">
+                                        <button type="button" class="mdc-button mdc-snackbar__action-button"
+                                                style="color: rgb(2, 136, 209);">Action
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-components__column">
+            <div>
+                <div class="mdc-component mdc-component__switches">
+                    <p>Switches and sliders</p>
+                    <div class="mdc-component__section mdc-component__section--size-narrow">
+                        <div dir-horizontal="" class="mdc-component__containers">
+                            <div class="mdc-component__containers__primary">
+                                <p>Primary</p>
+                                <div class="mdc-checkbox mdc-ripple-upgraded--unbounded"><input type="checkbox"
+                                                                                                checked=""
+                                                                                                class="mdc-checkbox__native-control">
+                                    <div class="mdc-checkbox__background">
+                                        <svg version="1.1" class="mdc-checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve"><path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path></svg>
+                                        <div
+                                                class="mdc-checkbox__mixedmark"></div>
+                                    </div>
+                                </div>
+                                <div class="mdc-radio"><input class="mdc-radio__native-control" type="radio" checked="">
+                                    <div class="mdc-radio__background">
+                                        <div class="mdc-radio__outer-circle"></div>
+                                        <div class="mdc-radio__inner-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="mdc-switch"><input type="checkbox" class="mdc-switch__native-control"
+                                                               checked="">
+                                    <div class="mdc-switch__background">
+                                        <div class="mdc-switch__knob"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-component__containers__secondary">
+                                <p>Secondary</p>
+                                <div class="mdc-checkbox"><input type="checkbox" checked=""
+                                                                 class="mdc-checkbox__native-control">
+                                    <div class="mdc-checkbox__background">
+                                        <svg version="1.1" class="mdc-checkbox__checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xml:space="preserve"><path class="mdc-checkbox__checkmark__path" fill="none" stroke="white" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path></svg>
+                                        <div
+                                                class="mdc-checkbox__mixedmark"></div>
+                                    </div>
+                                </div>
+                                <div class="mdc-radio"><input class="mdc-radio__native-control" type="radio" checked="">
+                                    <div class="mdc-radio__background">
+                                        <div class="mdc-radio__outer-circle"></div>
+                                        <div class="mdc-radio__inner-circle"></div>
+                                    </div>
+                                </div>
+                                <div class="mdc-switch"><input type="checkbox" class="mdc-switch__native-control"
+                                                               checked="">
+                                    <div class="mdc-switch__background">
+                                        <div class="mdc-switch__knob"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="flex"></span>
+            <div>
+                <div class="mdc-component mdc-component__cards">
+                    <p>Cards</p>
+                    <div class="mdc-component__section">
+                        <div class="mdc-component__containers__primary">
+                            <div class="mdc-card">
+                                <section class="mdc-card__header">
+                                    <div class="demo-card__avatar"></div>
+                                    <div>
+                                        <p class="mdc-card__title">Title</p>
+                                        <p class="mdc-card__subtitle">Subhead</p>
+                                    </div>
+                                </section>
+                                <section class="mdc-card__media">
+                                    <div class="material-image" width="262" height="262">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><g><rect x="0.3" y="0.5" width="300" height="300" class="material-image__background"></rect><g><path class="material-image--shape-circle" d="M124.5,171l26.3-45.5c-7.7-4.6-16.7-7.2-26.3-7.2c-28.6,0-51.7,23.2-51.7,51.7c0,28.6,23.2,51.7,51.7,51.7 c28.3,0,51.2-22.6,51.7-50.8H124.5z"></path><path class="material-image--shape-triangle" d="M176.2,170.1c0,0.3,0,0.6,0,1H228l-51.7-89.6l-25.5,44.1C166,134.5,176.2,151.1,176.2,170.1z"></path><path class="material-image--shape-intersection" d="M176.2,171c0-0.3,0-0.6,0-1c0-19-10.2-35.6-25.5-44.6L124.5,171H176.2z"></path></g></g></svg>
+                                    </div>
+                                </section>
+                                <section class="mdc-card__supporting-text">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Hic, quod.
+                                </section>
+                                <section class="mdc-card__actions">
+                                    <button type="button" class="mdc-button mdc-button--raised mdc--theme-secondary">
+                                        Button
+                                    </button>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdc-components__section">
+        <div class="mdc-components__column">
+            <div>
+                <div class="mdc-component mdc-component__menu">
+                    <p>Menu</p>
+                    <div class="mdc-component__section">
+                        <div class="mdc-component__section__content">
+                            <div class="mdc-component__section__content__frame">
+                                <header class="mdc-toolbar">
+                                    <section class="mdc-toolbar__section mdc-toolbar__section--align-start"><a
+                                            class="material-icons">menu</a> <span
+                                            class="mdc-toolbar__title">Title</span></section>
+                                </header>
+                                <nav class="mdc-permanent-drawer">
+                                    <div class="mdc-list-group">
+                                        <nav class="nav-header">
+                                            <div class="material-image" width="240" height="240">
+                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><g><rect x="0.3" y="0.5" width="300" height="300" class="material-image__background"></rect><g><path class="material-image--shape-circle" d="M124.5,171l26.3-45.5c-7.7-4.6-16.7-7.2-26.3-7.2c-28.6,0-51.7,23.2-51.7,51.7c0,28.6,23.2,51.7,51.7,51.7 c28.3,0,51.2-22.6,51.7-50.8H124.5z"></path><path class="material-image--shape-triangle" d="M176.2,170.1c0,0.3,0,0.6,0,1H228l-51.7-89.6l-25.5,44.1C166,134.5,176.2,151.1,176.2,170.1z"></path><path class="material-image--shape-intersection" d="M176.2,171c0-0.3,0-0.6,0-1c0-19-10.2-35.6-25.5-44.6L124.5,171H176.2z"></path></g></g></svg>
+                                            </div>
+                                        </nav>
+                                        <nav class="mdc-list"><a class="mdc-list-item" href="#"><i
+                                                class="material-icons mdc-list-item__start-detail" aria-hidden="true">share</i>Share</a>
+                                            <div class="mdc-list-item mdc-permanent-drawer--selected" href="#"><i
+                                                    class="material-icons mdc-list-item__start-detail"
+                                                    aria-hidden="true">cloud_upload</i>Upload
+                                            </div>
+                                            <a class="mdc-list-item" href="#"><i
+                                                    class="material-icons mdc-list-item__start-detail"
+                                                    aria-hidden="true">content_copy</i>Copy</a> <a class="mdc-list-item"
+                                                                                                   href="#"><i
+                                                    class="material-icons mdc-list-item__start-detail"
+                                                    aria-hidden="true">print</i>Print this page</a></nav>
+                                    </div>
+                                </nav>
+                                <div class="mdc-backdrop"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="flex"></span>
+            <div>
+                <div class="mdc-component mdc-component__textfield">
+                    <p>Text Field</p>
+                    <div class="mdc-component__section mdc-component__section--size-narrow">
+                        <div dir-horizontal="" class="mdc-component__containers">
+                            <div class="mdc-component__containers__primary mdc-textfield--theme-primary">
+                                <p>Primary</p>
+                                <div class="mdc-textfield"><input type="text" id="textfield-primary"
+                                                                  class="mdc-textfield__input"
+                                                                  placeholder="Single-line input label"
+                                                                  value="Input text for a single line"> <label
+                                        for="textfield-primary"
+                                        class="mdc-textfield__label mdc-textfield__label--float-above">Single-line input
+                                    label</label></div>
+                            </div>
+                            <div class="mdc-component__containers__secondary mdc-textfield--theme-secondary">
+                                <p>Secondary</p>
+                                <div class="mdc-textfield"><input type="text" id="textfield-primary"
+                                                                  class="mdc-textfield__input"
+                                                                  placeholder="Single-line input label"
+                                                                  value="Input text for a single line"> <label
+                                        for="textfield-primary"
+                                        class="mdc-textfield__label mdc-textfield__label--float-above">Single-line input
+                                    label</label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-components__column">
+            <div>
+                <div class="mdc-component mdc-component__toolbar">
+                    <p>Tool Bar</p>
+                    <div class="mdc-component__section mdc-component__section--size-full">
+                        <div class="mdc-component__section__content">
+                            <div class="mdc-component__section__content__frame">
+                                <section class="app-bar"></section>
+                                <header class="mdc-toolbar mdc--theme-primary">
+                                    <section class="mdc-toolbar__section mdc-toolbar__section--align-start"><i
+                                            class="mdc-icon-toggle material-icons" role="button" aria-label="Search">menu</i>
+                                        <span class="mdc-toolbar__title">Title</span></section>
+                                    <section class="mdc-toolbar__section mdc-toolbar__section--align-end"
+                                             role="toolbar"><i class="mdc-icon-toggle material-icons" role="button"
+                                                               aria-label="Search">search</i> <i
+                                            class="mdc-icon-toggle material-icons" role="button" aria-label="Menu">more_vert</i>
+                                    </section>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/material-web.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
