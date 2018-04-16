@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://unpkg.com/material-components-web@0.8.0/dist/material-components-web.min.css');
+
+.mdc-components {
+    box-sizing: border-box;
+    display: flex;
+    font-family: Roboto;
+    margin: 64px auto;
+    width: 1664px;
+}
+
+.mdc-components__section {
+    display: flex;
+}
+
+.mdc-components__column {
+    display: flex;
+    height: 664px;
+    flex-direction: column;
+    margin: 0 8px;
+    width: 400px;
+}
+
+.mdc-components .flex {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.mdc-components p {
+    color: #616161;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mdc-component > p {
+    color: #616161;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 0;
+}
+
+.mdc-component__section {
+    align-items: center;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+}
+
+.mdc-component__section--size-narrow {
+    height: 152px;
+}
+
+.mdc-component__section__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+
+.mdc-component__section__content__frame {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.mdc-component__section--size-full {
+    height: 620px;
+}
