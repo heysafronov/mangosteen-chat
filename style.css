@@ -73,3 +73,25 @@
 .mdc-component__section--size-full {
     height: 620px;
 }
+
+.mdc-component__containers {
+    align-items: flex-start;
+    display: flex;
+    height: 292px;
+    flex-direction: row;
+}
+
+.mdc-component__containers__primary__only p {
+    display: none;
+}
+
+.mdc-component__containers__primary, .mdc-component__containers__secondary {
+    display: flex;
+    align-items: center;
+}
+
+.mdc-component__containers__primary > p, .mdc-component__containers__secondary > p {
+    color: #616161;
+    font-size: 11px;
+    font-weight: bold;
+}
