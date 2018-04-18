@@ -103,3 +103,11 @@
 .mdc-component__containers__secondary {
     margin-left: 80px;
 }
+
+.mdc-component__containers__primary, .mdc-component__containers__secondary {
+    flex-direction: column;
+}
+
+.mdc-component__containers__primary > p, .mdc-component__containers__secondary > p {
+    margin: 25px 0 15px;
+}
