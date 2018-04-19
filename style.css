@@ -121,3 +121,12 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.mdc-component__containers[dir-horizontal] .mdc-component__containers__primary__only {
+    margin-top: 0;
+}
+
+.mdc-component__containers[dir-horizontal] .mdc-component__containers__secondary {
+    margin-left: 0;
+    margin-top: 12px;
+}
