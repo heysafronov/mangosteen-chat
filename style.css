@@ -140,3 +140,12 @@
     text-align: right;
     width: 60px;
 }
+
+.mdc-component__containers[dir-horizontal] .mdc-component__containers__primary > *[class^="mdc-"], .mdc-component__containers[dir-horizontal] .mdc-component__containers__secondary > *[class^="mdc-"] {
+    margin-top: 0;
+    margin-right: 60px;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
