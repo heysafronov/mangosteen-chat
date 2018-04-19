@@ -111,3 +111,13 @@
 .mdc-component__containers__primary > p, .mdc-component__containers__secondary > p {
     margin: 25px 0 15px;
 }
+
+.mdc-component__containers__primary > *[class^="mdc-"]:not(:nth-child(2)), .mdc-component__containers__secondary > *[class^="mdc-"]:not(:nth-child(2)) {
+    margin-top: 40px;
+}
+
+.mdc-component__containers[dir-horizontal] {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
