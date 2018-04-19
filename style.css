@@ -130,3 +130,13 @@
     margin-left: 0;
     margin-top: 12px;
 }
+
+.mdc-component__containers[dir-horizontal] .mdc-component__containers__primary, .mdc-component__containers[dir-horizontal] .mdc-component__containers__secondary {
+    flex-direction: row;
+}
+
+.mdc-component__containers[dir-horizontal] .mdc-component__containers__primary > p, .mdc-component__containers[dir-horizontal] .mdc-component__containers__secondary > p {
+    margin: 0 16px 0 0;
+    text-align: right;
+    width: 60px;
+}
