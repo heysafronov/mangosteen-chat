@@ -149,3 +149,32 @@
 *, :after, :before {
     box-sizing: inherit;
 }
+
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button,
+.mdc-component__buttons .mdc-component__containers__primary .mdc-fab {
+    background-color: #F44336;
+    color: #000000;
+}
+
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--plain,
+.mdc-component__buttons .mdc-component__containers__primary .mdc-fab--plain {
+    background-color: transparent;
+    color: #F44336;
+}
+
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab {
+    background-color: #0288D1;
+    color: #000000;
+}
+
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--plain,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab--plain {
+    background-color: transparent;
+    color: #0288D1;
+}
+
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--raised.mdc-ripple-upgraded::before,
+.mdc-component__buttons .mdc-component__containers__primary .mdc-button--raised.mdc-ripple-upgraded::after {
+    background-color: rgba(0, 0, 0, 0.06);
+}
