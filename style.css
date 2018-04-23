@@ -178,3 +178,25 @@
 .mdc-component__buttons .mdc-component__containers__primary .mdc-button--raised.mdc-ripple-upgraded::after {
     background-color: rgba(0, 0, 0, 0.06);
 }
+
+@media all and (max-width: 1712px) {
+    .mdc-components {
+        margin: 32px auto;
+        width: 832px;
+    }
+
+    .mdc-components__section {
+        flex-direction: column;
+    }
+
+    .mdc-components__column {
+        margin-bottom: 64px;
+    }
+}
+
+@media all and (max-width: 880px) {
+    .mdc-components {
+        flex-direction: column;
+        width: 416px;
+    }
+}
