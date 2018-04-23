@@ -231,3 +231,7 @@
 .mdc-component__buttons .mdc-component__containers__secondary .mdc-fab--plain.mdc-ripple-upgraded::after {
     background-color: rgba(2, 136, 209, 0.16);
 }
+
+.mdc-component__selection .mdc-component__containers__primary__only .mdc-snackbar {
+    transform: translate(-50%, -100%);
+}
