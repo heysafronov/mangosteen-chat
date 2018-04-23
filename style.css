@@ -209,3 +209,25 @@
 .mdc-component__buttons .mdc-component__containers__primary .mdc-fab.mdc-ripple-upgraded::after {
     background-color: rgba(0, 0, 0, 0.16);
 }
+
+.mdc-component__buttons .mdc-component__containers__primary .mdc-fab--plain.mdc-ripple-upgraded::after {
+    background-color: rgba(244, 67, 54, 0.16);
+}
+
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--raised.mdc-ripple-upgraded::before,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--raised.mdc-ripple-upgraded::after {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--plain.mdc-ripple-upgraded::before,
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-button--plain.mdc-ripple-upgraded::after {
+    background-color: rgba(2, 136, 209, 0.06);
+}
+
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab.mdc-ripple-upgraded::after {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.mdc-component__buttons .mdc-component__containers__secondary .mdc-fab--plain.mdc-ripple-upgraded::after {
+    background-color: rgba(2, 136, 209, 0.16);
+}
