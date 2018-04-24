@@ -254,3 +254,61 @@
     opacity: 1;
     font-size: 12px;
 }
+
+.mdc-component__switches .mdc-component__containers__primary .mdc-checkbox__native-control:checked:not(:disabled) ~ .mdc-checkbox__background,
+.mdc-component__switches .mdc-component__containers__primary .mdc-checkbox__native-control:indeterminate:not(:disabled) ~ .mdc-checkbox__background,
+.mdc-component__switches .mdc-component__containers__primary .mdc-radio__native-control:checked + .mdc-radio__background .mdc-radio__inner-circle {
+    background-color: #F44336;
+    border-color: #F44336;
+}
+
+.mdc-component__switches .mdc-component__containers__primary .mdc-switch__native-control:checked ~ .mdc-switch__background::before,
+.mdc-component__switches .mdc-component__containers__primary .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob::before,
+.mdc-component__switches .mdc-component__containers__primary .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob {
+    background-color: #F44336;
+}
+
+.mdc-component__switches .mdc-component__containers__primary .mdc-radio__native-control:checked + .mdc-radio__background .mdc-radio__outer-circle {
+    border-color: #F44336;
+}
+
+.mdc-component__switches .mdc-component__containers__primary .mdc-checkbox__background::before,
+.mdc-component__switches .mdc-component__containers__primary .mdc-radio__background::before {
+    background-color: #F44336;
+}
+
+.mdc-component__switches .mdc-component__containers__secondary .mdc-checkbox__native-control:checked:not(:disabled) ~ .mdc-checkbox__background,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-checkbox__native-control:indeterminate:not(:disabled) ~ .mdc-checkbox__background,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-radio__native-control:checked + .mdc-radio__background .mdc-radio__inner-circle {
+    background-color: #0288D1;
+    border-color: #0288D1;
+}
+
+.mdc-component__switches .mdc-component__containers__secondary .mdc-switch__native-control:checked ~ .mdc-switch__background::before,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob::before,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-switch__native-control:checked ~ .mdc-switch__background .mdc-switch__knob {
+    background-color: #0288D1;
+}
+
+.mdc-component__switches .mdc-component__containers__secondary .mdc-radio__native-control:checked + .mdc-radio__background .mdc-radio__outer-circle {
+    border-color: #0288D1;
+}
+
+.mdc-component__switches .mdc-component__containers__secondary .mdc-checkbox__background::before,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-radio__background::before {
+    background-color: #0288D1;
+}
+
+.mdc-component__switches .mdc-component__containers__primary .mdc-checkbox.mdc-ripple-upgraded--unbounded::before,
+.mdc-component__switches .mdc-component__containers__primary .mdc-checkbox.mdc-ripple-upgraded--unbounded::after,
+.mdc-component__switches .mdc-component__containers__primary .mdc-radio.mdc-ripple-upgraded--unbounded::before,
+.mdc-component__switches .mdc-component__containers__primary .mdc-radio.mdc-ripple-upgraded--unbounded::after {
+    background-color: rgba(244, 67, 54, 0.14);
+}
+
+.mdc-component__switches .mdc-component__containers__secondary .mdc-checkbox.mdc-ripple-upgraded--unbounded::before,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-checkbox.mdc-ripple-upgraded--unbounded::after,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-radio.mdc-ripple-upgraded--unbounded::before,
+.mdc-component__switches .mdc-component__containers__secondary .mdc-radio.mdc-ripple-upgraded--unbounded::after {
+    background-color: rgba(2, 136, 209, 0.14);
+}
