@@ -312,3 +312,91 @@
 .mdc-component__switches .mdc-component__containers__secondary .mdc-radio.mdc-ripple-upgraded--unbounded::after {
     background-color: rgba(2, 136, 209, 0.14);
 }
+
+.mdc-component__cards .mdc-card {
+    background-color: #ffffff;
+    height: 316px;
+    width: 262px;
+}
+
+.mdc-component__cards .mdc-card__title,
+.mdc-component__cards .mdc-card__subtitle {
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.mdc-component__cards .mdc-card__subtitle {
+    color: #707070;
+}
+
+.mdc-component__cards .mdc-card__header {
+    align-items: center;
+    display: flex;
+    height: 40px;
+    padding: 0 16px 20px;
+}
+
+.mdc-component__cards .demo-card__avatar {
+    background: #bdbdbd;
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+.mdc-component__cards .mdc-card__supporting-text {
+    font-size: 10px;
+}
+
+.mdc-component__cards .demo-card--with-avatar .mdc-card__title,
+.mdc-component__cards .demo-card--with-avatar .mdc-card__subtitle {
+    margin-left: 56px;
+}
+
+.mdc-component__cards .mdc-card__actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 16px 16px 16px;
+}
+
+.mdc-component__cards .mdc-card__media {
+    height: 140px;
+    overflow: hidden;
+    padding: 0
+}
+
+.mdc-component__cards .mdc-card__media .material-image {
+    top: 64px;
+    position: relative;
+}
+
+.mdc-component__cards .mdc--theme-primary {
+    background-color: #F44336;
+    color: #000000;
+}
+
+.mdc-component__cards .mdc--theme-secondary {
+    background-color: #0288D1;
+    color: #000000;
+}
+
+.mdc-component__cards .material-image .material-image__background {
+    fill: #ba000d;
+}
+
+.mdc-component__cards .material-image .material-image--shape-circle,
+.mdc-component__cards .material-image .material-image--shape-triangle {
+    fill: #F44336;
+}
+
+.mdc-component__cards .material-image .material-image--shape-intersection {
+    fill: #ba000d;
+}
+
+.mdc-component__cards .mdc-button--raised.mdc--theme-primary.mdc-ripple-upgraded::after {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.mdc-component__cards .mdc-button--raised.mdc--theme-secondary.mdc-ripple-upgraded::after {
+    background-color: rgba(0, 0, 0, 0.06);
+}
