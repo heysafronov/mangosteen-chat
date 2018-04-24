@@ -235,3 +235,22 @@
 .mdc-component__selection .mdc-component__containers__primary__only .mdc-snackbar {
     transform: translate(-50%, -100%);
 }
+
+.mdc-component__selection .mdc-snackbar {
+    left: auto !important;
+    transform: translate(-28%, -164%);
+    position: absolute;
+    min-width: 240px;
+    margin-left: -16px;
+    width: 240px;
+}
+
+.mdc-component__selection .mdc-snackbar__secondary {
+    transform: translate(-28%, -40%);
+}
+
+.mdc-component__selection .mdc-snackbar__text,
+.mdc-component__selection .mdc-snackbar__action-button {
+    opacity: 1;
+    font-size: 12px;
+}
