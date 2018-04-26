@@ -428,3 +428,55 @@
     top: 0;
     left: 0;
 }
+
+.mdc-component__menu .nav-header {
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mdc-component__menu .nav-header .material-image {
+    position: relative;
+    top: -50px;
+}
+
+.mdc-component__menu .mdc-permanent-drawer {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.mdc-component__menu .mdc-list-item {
+    font-weight: 400;
+}
+
+.mdc-component__menu .mdc-list-item.mdc-ripple-upgraded {
+    left: 0;
+}
+
+.mdc-component__menu .mdc-list-item.mdc-ripple-upgraded::before,
+.mdc-component__menu .mdc-list-item.mdc-ripple-upgraded::after {
+    background-color: rgba(244, 67, 54, 0.06);
+}
+
+.mdc-component__menu .mdc-permanent-drawer .mdc-permanent-drawer--selected::before,
+.mdc-component__menu .mdc-permanent-drawer .mdc-list-item:active::before {
+    background-color: #F44336;
+    opacity: .16;
+}
+
+.mdc-component__menu .mdc-permanent-drawer--selected.mdc-list-item .mdc-list-item__start-detail,
+.mdc-component__menu .mdc-permanent-drawer .mdc-permanent-drawer--selected {
+    color: inherit;
+}
+
+.mdc-component__menu .material-image__background {
+    fill: #ba000d;
+}
+
+.mdc-component__menu .material-image--shape-circle,
+.mdc-component__menu .material-image--shape-triangle {
+    fill: #F44336;
+}
+
+.mdc-component__menu .material-image--shape-intersection {
+    fill: #ba000d;
+}
