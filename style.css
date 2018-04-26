@@ -400,3 +400,31 @@
 .mdc-component__cards .mdc-button--raised.mdc--theme-secondary.mdc-ripple-upgraded::after {
     background-color: rgba(0, 0, 0, 0.06);
 }
+
+.mdc-component__menu .mdc-toolbar {
+    background-color: #0288D1;
+    z-index: 1;
+}
+
+.mdc-component__menu .mdc-toolbar {
+    height: 56px;
+    padding: 16px;
+}
+
+.mdc-component__menu .mdc-permanent-drawer {
+    border-right: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.mdc-component__menu .mdc-backdrop {
+    background-color: rgba(0, 0, 0, .50);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
