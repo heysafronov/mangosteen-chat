@@ -480,3 +480,43 @@
 .mdc-component__menu .material-image--shape-intersection {
     fill: #ba000d;
 }
+
+.mdc-component__textfield .mdc-component__containers {
+    margin-top: 40px;
+}
+
+.mdc-component__textfield .mdc-component__containers__secondary {
+    padding: 17px 0;
+}
+
+.mdc-component__textfield .mdc-component__containers p {
+    padding-bottom: 20px;
+}
+
+.mdc-component__textfield .mdc-textfield {
+    margin-right: 14px !important;
+}
+
+.mdc-component__textfield .mdc-textfield__input {
+    width: 264px;
+}
+
+.mdc-component__textfield .mdc-textfield__label {
+    bottom: 12px;
+}
+
+.mdc-component__textfield .mdc-textfield--theme-primary .mdc-textfield__label {
+    color: #F44336;
+}
+
+.mdc-component__textfield .mdc-textfield--theme-primary .mdc-textfield:not(.mdc-textfield--upgraded) .mdc-textfield__input:focus {
+    border-color: #F44336;
+}
+
+.mdc-component__textfield .mdc-textfield--theme-secondary .mdc-textfield__label {
+    color: #0288D1;
+}
+
+.mdc-component__textfield .mdc-textfield--theme-secondary .mdc-textfield:not(.mdc-textfield--upgraded) .mdc-textfield__input:focus {
+    border-color: #0288D1;
+}
