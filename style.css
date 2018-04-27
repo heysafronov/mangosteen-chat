@@ -520,3 +520,112 @@
 .mdc-component__textfield .mdc-textfield--theme-secondary .mdc-textfield:not(.mdc-textfield--upgraded) .mdc-textfield__input:focus {
     border-color: #0288D1;
 }
+
+.mdc-component__toolbar .app-bar {
+    background-color: #ba000d;
+    display: block;
+    height: 20px;
+    width: 100%;
+}
+
+.mdc-component__toolbar .mdc-toolbar {
+    height: 56px;
+    padding: 16px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mdc-component__toolbar .mdc-toolbar__section {
+    align-items: center;
+}
+
+.mdc-component__toolbar .mdc-toolbar__title {
+    padding-left: 8px;
+}
+
+.mdc-component__toolbar .material-icons {
+    color: #000000;
+}
+
+.mdc-component__toolbar .material-image {
+    position: relative;
+    top: -64px;
+}
+
+.mdc-component__toolbar main {
+    background-color: white;
+    height: calc(100% - 48px);
+}
+
+.mdc-component__toolbar .cover-image__frame {
+    display: block;
+    height: 220px;
+    position: relative;
+    width: 100%;
+}
+
+.mdc-component__toolbar .cover-image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mdc-component__toolbar .mdc-fab {
+    position: absolute;
+    bottom: -25px;
+    right: 28px;
+}
+
+.mdc-component__toolbar .content {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 50px 35px;
+}
+
+.mdc-component__toolbar .mdc-component__section__content__frame::before {
+    bottom: 0;
+    content: "";
+    background-image: url('http://storage.googleapis.com/demos-in-spec/images/android-bottom.png');
+    background-repeat: no-repeat;
+    height: 48px;
+    position: absolute;
+    width: 100%;
+    z-index: 9999999;
+}
+
+.mdc-component__toolbar .mdc--theme-primary {
+    background-color: #F44336;
+    color: #000000;
+}
+
+.mdc-component__toolbar .mdc--theme-secondary {
+    background-color: #0288D1;
+    color: #000000;
+}
+
+.mdc-component__toolbar .material-image .material-image__background {
+    fill: #005b9f;
+}
+
+.mdc-component__toolbar .material-image .material-image--shape-circle,
+.mdc-component__toolbar .material-image .material-image--shape-triangle {
+    fill: #5eb8ff;
+}
+
+.mdc-component__toolbar .material-image .material-image--shape-intersection {
+    fill: #005b9f;
+}
+
+.mdc-component__toolbar .mdc-icon-toggle::before,
+.mdc-component__toolbar .mdc-icon-toggle::after {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.mdc-component__toolbar .mdc-fab.mdc--theme-primary.mdc-ripple-upgraded::after {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.mdc-component__toolbar .mdc-fab.mdc--theme-secondary.mdc-ripple-upgraded::after {
+    background-color: rgba(0, 0, 0, 0.16);
+}
