@@ -1,2 +1,2 @@
-# Interactive Web Chat with More function
+# Interactive Web Chat
 
