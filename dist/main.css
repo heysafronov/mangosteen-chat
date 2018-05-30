@@ -51,7 +51,7 @@
     outline: none;
     max-height: 80px;
     height: 50px;
-    overflow: auto;
+    overflow-x: auto;
     color: #777;
 }
 
