@@ -43,7 +43,7 @@
 }
 
 .chat-controls__textarea {
-    width: 280px;
+    width: auto;
     border: none;
     padding: 10px;
     border-radius: 5px;
