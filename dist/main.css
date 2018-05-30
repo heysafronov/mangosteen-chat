@@ -54,6 +54,7 @@
     overflow: auto;
     color: #777;
     word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .chat-controls-buttons {
