@@ -100,7 +100,6 @@
 
 [contenteditable=true]:empty:before{
     content: attr(placeholder);
-    display: inline-block;
     color: #999;
     font-family: monospace;
     letter-spacing: 0.015em;
