@@ -51,8 +51,9 @@
     outline: none;
     max-height: 80px;
     height: 50px;
-    overflow-y: auto;
+    overflow: auto;
     color: #777;
+    word-wrap: break-word;
 }
 
 .chat-controls-buttons {
