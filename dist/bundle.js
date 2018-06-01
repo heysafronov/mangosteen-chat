@@ -627,7 +627,7 @@ var Network = function () {
     function Network() {
         _classCallCheck(this, Network);
 
-        this.url = 'https://mangosteenchat.firebaseio.com/chat.json';
+        this.url = 'https://mangosteenchat1.firebaseio.com/chat.json';
     }
 
     _createClass(Network, [{
