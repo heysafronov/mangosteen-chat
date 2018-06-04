@@ -351,8 +351,7 @@ var Field = function (_EventEmitter) {
             var emoji = this.el.querySelectorAll('[data-emoji]');
             for (var i = 0; i < emoji.length; i++) {
                 emoji[i].addEventListener('click', function () {
-                    var emojiCopy = this.innerHTML;
-                    textArea.innerHTML += emojiCopy;
+                    textArea.innerHTML += this.innerHTML;
                 });
             }
         }
@@ -633,6 +632,10 @@ var Network = function () {
         key: 'getMessages',
         value: function getMessages() {
             return fetch(this.url).then(function (response) {
+                if (response.status !== 200) {
+                    console.log('Looks like there was a problem. Status Code: ' + response.status);
+                    return;
+                }
                 return response.json();
             }).then(function (body) {
                 return body;

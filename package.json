@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "wp": "call ./node_modules/.bin/webpack"
+  },
   "author": "Egor Safronov",
   "license": "MIT",
   "devDependencies": {
