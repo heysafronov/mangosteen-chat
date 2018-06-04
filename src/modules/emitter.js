@@ -7,7 +7,7 @@ class EventEmitter {
 
     emit(event, data) {
         const listeners = this.events[event.type] || [];
-        listeners.forEach((listener) => {
+        listeners.forEach(listener => {
             listener.call(this, data);
         });
     }

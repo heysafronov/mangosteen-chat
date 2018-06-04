@@ -12,11 +12,11 @@ const store = {
 };
 
 network.getMessages()
-    .then((body) => {
+    .then(body => {
         store.data.stack = body;
         return store;
     })
-    .then((store) => {
+    .then(store => {
         const application = new App(store);
         application.run();
     });

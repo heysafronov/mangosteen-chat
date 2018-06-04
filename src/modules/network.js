@@ -7,10 +7,10 @@ class Network {
 
     getMessages() {
         return fetch(this.url)
-            .then((response) => {
+            .then(response => {
                 return response.json();
             })
-            .then((body) => {
+            .then(body => {
                 return body;
             })
     }
