@@ -244,9 +244,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 var Chat = function () {
-    function Chat(_ref) {
-        var el = _ref.el;
-
+    function Chat(el) {
         _classCallCheck(this, Chat);
 
         this.el = el;
