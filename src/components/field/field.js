@@ -1,6 +1,5 @@
 import {EventEmitter} from "../../modules/emitter.js";
 import './field.css';
-
 export {Field};
 
 class Field extends EventEmitter {

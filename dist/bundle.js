@@ -303,7 +303,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
 var Field = function (_EventEmitter) {
     _inherits(Field, _EventEmitter);
 
