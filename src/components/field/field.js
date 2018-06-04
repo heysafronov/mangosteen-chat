@@ -63,8 +63,7 @@ class Field extends EventEmitter {
             emoji[i].addEventListener(
                 'click',
                 function () {
-                    let emojiCopy = this.innerHTML;
-                    textArea.innerHTML += emojiCopy;
+                    textArea.innerHTML += this.innerHTML;
                 }
             )
         }
