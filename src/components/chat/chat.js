@@ -2,7 +2,7 @@ export {Chat};
 import './chat.css';
 
 class Chat {
-    constructor({el}) {
+    constructor(el) {
         this.el = el;
     }
 

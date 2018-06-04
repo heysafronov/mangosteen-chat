@@ -1,10 +1,9 @@
 import {EventEmitter} from "../../modules/emitter.js";
 import './field.css';
-
 export {Field};
 
 class Field extends EventEmitter {
-    constructor({el}) {
+    constructor(el) {
         super();
         this.el = el;
         this.init();

@@ -244,9 +244,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 var Chat = function () {
-    function Chat(_ref) {
-        var el = _ref.el;
-
+    function Chat(el) {
         _classCallCheck(this, Chat);
 
         this.el = el;
@@ -303,13 +301,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
 var Field = function (_EventEmitter) {
     _inherits(Field, _EventEmitter);
 
-    function Field(_ref) {
-        var el = _ref.el;
-
+    function Field(el) {
         _classCallCheck(this, Field);
 
         var _this = _possibleConstructorReturn(this, (Field.__proto__ || Object.getPrototypeOf(Field)).call(this));
