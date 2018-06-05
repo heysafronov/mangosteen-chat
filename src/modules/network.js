@@ -2,7 +2,7 @@ export {Network};
 
 class Network {
     constructor() {
-        this.url = 'https://mangosteenchat1.firebaseio.com/chat.json';
+        this.url = 'https://mangosteen-chat.firebaseio.com/chat.json';
     }
 
     getMessages() {
