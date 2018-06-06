@@ -27,7 +27,7 @@ class Field extends EventEmitter {
             });
             this.emit(event);
         }
-        this.msg = '';
+        this.msg = getMsg.innerHTML = '';
     }
 
     render() {
