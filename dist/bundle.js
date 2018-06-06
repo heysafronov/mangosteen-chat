@@ -329,8 +329,7 @@ var Field = function (_EventEmitter) {
             evt.preventDefault();
             var form = evt.target;
             var getMsg = form.querySelector('.chat-controls__textarea');
-            this.msg = getMsg.innerHTML;
-            if (this.msg !== '') {
+            if (getMsg.innerHTML !== '') {
                 var event = new Event(Field.MSG_SEND_EVENT, {
                     bubbles: true
                 });

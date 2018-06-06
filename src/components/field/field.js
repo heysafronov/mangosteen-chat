@@ -20,8 +20,7 @@ class Field extends EventEmitter {
         evt.preventDefault();
         const form = evt.target;
         const getMsg = form.querySelector('.chat-controls__textarea');
-        this.msg = getMsg.innerHTML;
-        if (this.msg !== '') {
+        if (getMsg.innerHTML !== '') {
             const event = new Event(Field.MSG_SEND_EVENT, {
                 bubbles: true
             });
