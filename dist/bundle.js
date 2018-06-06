@@ -336,7 +336,7 @@ var Field = function (_EventEmitter) {
                 });
                 this.emit(event);
             }
-            this.msg = getMsg.innerHTML = '';
+            getMsg.innerHTML = '';
         }
     }, {
         key: 'render',
