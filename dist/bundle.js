@@ -593,10 +593,17 @@ var EventEmitter = function () {
     }, {
         key: "subscribe",
         value: function subscribe(event, fn) {
+            var _this2 = this;
+
             if (!this.events[event]) {
                 this.events[event] = [];
             }
             this.events[event].push(fn);
+            return function () {
+                _this2.events[event] = _this2.events[event].filter(function (eventFn) {
+                    return fn !== eventFn;
+                });
+            };
         }
     }]);
 
