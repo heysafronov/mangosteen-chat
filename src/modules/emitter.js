@@ -17,5 +17,8 @@ class EventEmitter {
             this.events[event] = [];
         }
         this.events[event].push(fn);
+        return () => {
+            this.events[event] = this.events[event].filter(eventFn => fn !== eventFn);
+        }
     }
 }
