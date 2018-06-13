@@ -1,8 +1,8 @@
 export {Network};
 
 class Network {
-    constructor() {
-        this.url = 'https://mangosteen-chat.firebaseio.com/chat.json';
+    constructor(url) {
+        this.url = url;
     }
 
     getMessages() {

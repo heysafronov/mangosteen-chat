@@ -2,7 +2,7 @@ import {App} from './components/app/app.js';
 import {Network} from './modules/network.js';
 
 const element = document.querySelector('#chat');
-const network = new Network();
+const network = new Network('https://mangosteen-chat.firebaseio.com/chat.json');
 
 const store = {
     el: element,

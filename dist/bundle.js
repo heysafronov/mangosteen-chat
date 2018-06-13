@@ -538,7 +538,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var element = document.querySelector('#chat');
-var network = new _modules_network_js__WEBPACK_IMPORTED_MODULE_1__["Network"]();
+var network = new _modules_network_js__WEBPACK_IMPORTED_MODULE_1__["Network"]('https://mangosteen-chat.firebaseio.com/chat.json');
 
 var store = {
     el: element,
@@ -629,18 +629,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 var Network = function () {
-    function Network() {
+    function Network(url) {
         _classCallCheck(this, Network);
 
-        this.url = 'https://mangosteen-chat.firebaseio.com/chat.json';
+        this.url = url;
     }
 
     _createClass(Network, [{
-        key: 'getMessages',
+        key: "getMessages",
         value: function getMessages() {
             return fetch(this.url).then(function (response) {
                 if (response.status !== 200) {
-                    console.log('Looks like there was a problem. Status Code: ' + response.status);
+                    console.log("Looks like there was a problem. Status Code: " + response.status);
                     return;
                 }
                 return response.json();
