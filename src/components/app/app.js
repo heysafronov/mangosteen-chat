@@ -1,7 +1,7 @@
-import {Chat} from "../chat/chat.js";
-import {Field} from "../field/field.js";
-import {Message} from "../message/message.js";
-import {Messages} from "../messages/messages.js";
+import {Chat} from "../chat/chat";
+import {Field} from "../field/field";
+import {Message} from "../message/message";
+import {Messages} from "../messages/messages";
 import '../../../assets/reset/reset.min.css';
 import '../../../assets/fonts/fonts.css';
 import './app.css';

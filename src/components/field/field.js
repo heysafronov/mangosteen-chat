@@ -1,4 +1,4 @@
-import {EventEmitter} from "../../modules/emitter.js";
+import {EventEmitter} from "../../modules/emitter";
 import './field.css';
 export {Field};
 
