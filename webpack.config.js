@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.[chunkhash].js'
     },
     mode: 'production',
     module: {
@@ -29,8 +29,7 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '[name].css',
-            chunkFilename: '[id].css'
+            filename: 'style.[chunkhash].css'
         })
     ]
 };
