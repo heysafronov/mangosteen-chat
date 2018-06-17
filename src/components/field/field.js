@@ -22,7 +22,7 @@ class Field extends EventEmitter {
         const getMsg = form.querySelector('.chat-controls__textarea');
         this.msg = getMsg.innerHTML;
         const searchImg = this.msg.search('<img src="data');
-        const searchDoc = this.msg.search('<img src="./assets/img/doc.png"');
+        const searchDoc = this.msg.search('<img src="../assets/img/doc.png"');
         if (this.msg !== '') {
             if (searchImg === -1 && searchDoc === -1) {
                 this.msg = getMsg.innerHTML.replace(/<\/?[^>]+>/g,'');
@@ -44,7 +44,7 @@ class Field extends EventEmitter {
                         <input type="submit" value="Send" class="chat-controls-buttons__send">
                         <div class="chat-controls-buttons-wrapper">
                             <div class="chat-controls-buttons__smiles">
-                                <img src="assets/img/smile.png">
+                                <img src="../assets/img/smile.png">
                                 <div class="chat-controls-buttons__smiles-menu">
                                     <div class="chat-controls-buttons__smile" data-emoji>😑</div>
                                     <div class="chat-controls-buttons__smile" data-emoji>😕</div>
@@ -96,7 +96,7 @@ class Field extends EventEmitter {
                 }
                 else {
                     const doc = document.createElement('img');
-                    doc.src = './assets/img/doc.png';
+                    doc.src = '../assets/img/doc.png';
                     doc.classList.add('message__newImg');
                     textArea.appendChild(doc);
                 }

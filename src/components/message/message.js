@@ -13,7 +13,7 @@ class Message {
             type: 'me',
             author: 'Mark Bennington',
             time: `${new Date().toLocaleString('en-US', this.optionsDate)}`,
-            avatar: 'assets/img/mark.png'
+            avatar: '../assets/img/mark.png'
         };
     }
 
