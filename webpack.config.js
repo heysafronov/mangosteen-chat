@@ -28,6 +28,9 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        contentBase: path.join(__dirname, 'dist')
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: 'style.[chunkhash].css'

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clear": "rimraf ./dist",
-    "dev": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development",
     "build": "npm run clear && webpack --mode production"
   },
   "author": "Egor Safronov",
@@ -19,7 +19,8 @@
     "mini-css-extract-plugin": "^0.4.0",
     "rimraf": "^2.6.2",
     "webpack": "^4.10.0",
-    "webpack-cli": "^2.1.4"
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {}
 }
