@@ -21,7 +21,6 @@ class Messages {
                         </div>
                      </div>`)
             }
-
             if (data.stack[a].type === 'other') {
                 this.arr.push(`<div class="chat-item chat-item-other">
                         <div class="message">
