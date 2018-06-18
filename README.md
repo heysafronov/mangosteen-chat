@@ -1,4 +1,5 @@
 # Interactive Web Chat
+>Note. This application is in alpha phase. However, it is workable and safe.
 
 Single page application. Vanilla JavaScript Components.
 
