@@ -3,7 +3,7 @@
 Single page application. Vanilla JavaScript Components.
 
 ## Demo
-Demo is available on this [page](https://heysafronov.github.io/mangosteen-chat/dist/index.html).
+Demo is available on this [page](https://heysafronov.github.io/mangosteen-chat/dist/).
 
 ## Screenshot
 <img src="https://raw.githubusercontent.com/heysafronov/mangosteen-chat/master/assets/img/mangosteen-chat.png">
