@@ -15,4 +15,4 @@ Using [Firebase](https://firebase.google.com/) as simple backend.
 Compatible with every evergreen browser.
 
 ## License
-Licensed under MIT.
+Licensed under [MIT](https://github.com/heysafronov/mangosteen-chat/blob/master/LICENSE).
