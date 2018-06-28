@@ -34,6 +34,6 @@ class Message {
     }
 
     scroll() {
-        this.el.scrollIntoView();
+        this.el.scrollIntoView(false);
     }
 }
