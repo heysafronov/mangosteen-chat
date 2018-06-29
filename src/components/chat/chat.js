@@ -1,7 +1,6 @@
-export {Chat};
 import './chat.css';
 
-class Chat {
+export class Chat {
     constructor({el}) {
         this.el = el;
     }

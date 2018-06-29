@@ -1,6 +1,4 @@
-export {Message};
-
-class Message {
+export class Message {
     constructor({el, msg}) {
         this.el = el;
         this.msg = msg;

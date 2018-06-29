@@ -2,12 +2,12 @@ import {Chat} from "../chat/chat";
 import {Field} from "../field/field";
 import {Message} from "../message/message";
 import {Messages} from "../messages/messages";
+import {Spinner} from "../spinner/spinner";
 import '../../../assets/reset/reset.min.css';
 import '../../../assets/fonts/fonts.css';
 import './app.css';
-export {App};
 
-class App {
+export class App {
     constructor({el, data}) {
         this.el = el;
         this.chat = new Chat({
@@ -15,6 +15,13 @@ class App {
         });
         this.field = new Field({
             el: document.createElement('div')
+        });
+        this.field.subscribe(Field.MSG_SEND_EVENT, () => {
+            this.message.render();
+            this.messages.el.append(
+                this.message.el
+            );
+            this.message.scroll();
         });
         this.message = new Message({
             el: document.createElement('div'),
@@ -26,12 +33,9 @@ class App {
                 stack: data.stack
             }
         });
-        this.field.subscribe(Field.MSG_SEND_EVENT, () => {
-            this.message.render();
-            this.messages.el.append(
-                this.message.el
-            );
-            this.message.scroll();
+        this.spinner = new Spinner({
+            el: document.createElement('div'),
+            parent: this.field.el
         });
     }
 
@@ -39,6 +43,7 @@ class App {
         this.chat.render();
         this.messages.render();
         this.field.render();
+        this.spinner.render();
         this.el.append(
             this.chat.el
         );
@@ -51,7 +56,7 @@ class App {
     init() {
         this.field.initEmoji();
         this.field.initFiles();
-        this.field.initSpinner();
+        this.spinner.init();
     }
 
     run() {
