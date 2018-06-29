@@ -1,9 +1,10 @@
 import {Chat} from "../chat/chat";
 import {Field} from "../field/field";
-import {Message} from "../message/message";
-import {Messages} from "../messages/messages";
 import {Spinner} from "../spinner/spinner";
 import {Emoji} from "../emoji/emoji";
+import {Files} from "../files/files";
+import {Message} from "../message/message";
+import {Messages} from "../messages/messages";
 import '../../../assets/reset/reset.min.css';
 import '../../../assets/fonts/fonts.css';
 import './app.css';
@@ -24,6 +25,18 @@ export class App {
             );
             this.message.scroll();
         });
+        this.spinner = new Spinner({
+            el: document.createElement('div'),
+            parent: this.field.el
+        });
+        this.emoji = new Emoji({
+            el: document.createElement('div'),
+            parent: this.field.el
+        });
+        this.files = new Files({
+            el: document.createElement('div'),
+            parent: this.field.el
+        });
         this.message = new Message({
             el: document.createElement('div'),
             msg: this.field
@@ -34,14 +47,6 @@ export class App {
                 stack: data.stack
             }
         });
-        this.spinner = new Spinner({
-            el: document.createElement('div'),
-            parent: this.field.el
-        });
-        this.emoji = new Emoji({
-            el: document.createElement('div'),
-            parent: this.field.el
-        });
     }
 
     render() {
@@ -50,6 +55,7 @@ export class App {
         this.field.render();
         this.spinner.render();
         this.emoji.render();
+        this.files.render();
         this.el.append(
             this.chat.el
         );
@@ -60,9 +66,9 @@ export class App {
     }
 
     init() {
-        this.field.initFiles();
         this.spinner.init();
         this.emoji.init();
+        this.files.init();
     }
 
     run() {

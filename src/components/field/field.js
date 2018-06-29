@@ -18,8 +18,7 @@ export class Field extends EventEmitter {
                         <div class="spinner"></div>
                         <div class="chat-controls-buttons-wrapper">
                         <div class="emoji"></div>
-                            <input type="file" id="chat-controls-buttons__upload" multiple accept="file_extension">
-                            <label class="chat-controls-buttons__attach" for="chat-controls-buttons__upload"><i class="fa fa-paperclip"></i></label>
+                        <div class="files"></div>
                         </div>
                     </div>
             </form>
@@ -49,36 +48,6 @@ export class Field extends EventEmitter {
             this.emit(event);
         }
         getMsg.innerHTML = '';
-    }
-
-    initFiles() {
-        const textArea = this.el.querySelector('.chat-controls__textarea');
-        const fileElem = this.el.querySelector('#chat-controls-buttons__upload');
-        fileElem.addEventListener('change', handleFiles.bind(fileElem.files));
-
-        function handleFiles(files) {
-            files = [...files.target.files];
-            files.forEach(previewFile);
-        }
-
-        function previewFile(file) {
-            let reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onloadend = () => {
-                if (file.type === 'image/jpeg' || file.type === 'image/png' || file.type === 'image/gif') {
-                    const img = document.createElement('img');
-                    img.src = reader.result;
-                    img.classList.add('message__newImg');
-                    textArea.appendChild(img);
-                }
-                else {
-                    const doc = document.createElement('img');
-                    doc.src = '../assets/img/doc.png';
-                    doc.classList.add('message__newImg');
-                    textArea.appendChild(doc);
-                }
-            }
-        }
     }
 }
 

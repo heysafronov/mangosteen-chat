@@ -46,18 +46,6 @@
     outline: none;
 }
 
-.chat-controls-buttons__attach {
-    color: #999;
-    cursor: pointer;
-    margin-left: 17px;
-    display: flex;
-    align-items: center;
-}
-
-#chat-controls-buttons__upload {
-    display: none;
-}
-
 .chat-controls__textarea img {
     height: 30px;
     vertical-align: middle;
