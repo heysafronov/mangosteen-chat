@@ -1,3 +1,5 @@
+import './spinner.css';
+
 export class Spinner {
     constructor({el, parent}) {
         this.el = el;

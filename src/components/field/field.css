@@ -30,19 +30,6 @@
     display: flex;
 }
 
-.chat-controls-buttons__smiles {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.chat-controls-buttons__smiles img {
-    height: 15px;
-    width: 15px;
-    z-index: 1;
-}
-
 .chat-controls-buttons__send {
     padding: 0 15px;
     background: #75b1e8;
@@ -65,24 +52,6 @@
     margin-left: 17px;
     display: flex;
     align-items: center;
-}
-
-.chat-controls-buttons__smiles-menu {
-    background-color: #fff;
-    display: none;
-    position: absolute;
-    width: 140px;
-    height: 50px;
-    line-height: 50px;
-}
-
-.chat-controls-buttons__smiles:hover .chat-controls-buttons__smiles-menu {
-    display: flex;
-    right: 10px;
-}
-
-.chat-controls-buttons__smile {
-    margin-left: 5px;
 }
 
 #chat-controls-buttons__upload {

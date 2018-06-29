@@ -8,6 +8,24 @@ export class Field extends EventEmitter {
         this.init();
     }
 
+    render() {
+        this.el.classList.add('chat-controls');
+        this.el.innerHTML = `
+            <form>
+                    <div contenteditable="true" class="chat-controls__textarea" placeholder="Type a message"></div>
+                    <div class="chat-controls-buttons">
+                        <input type="submit" value="Send" class="chat-controls-buttons__send">
+                        <div class="spinner"></div>
+                        <div class="chat-controls-buttons-wrapper">
+                        <div class="emoji"></div>
+                            <input type="file" id="chat-controls-buttons__upload" multiple accept="file_extension">
+                            <label class="chat-controls-buttons__attach" for="chat-controls-buttons__upload"><i class="fa fa-paperclip"></i></label>
+                        </div>
+                    </div>
+            </form>
+        `;
+    }
+
     init() {
         this.el.addEventListener(
             'submit',
@@ -21,56 +39,16 @@ export class Field extends EventEmitter {
         this.msg = getMsg.innerHTML;
         const searchImg = this.msg.search('<img src="data');
         const searchDoc = this.msg.search('<img src="../assets/img/doc.png"');
-            if (searchImg === -1 && searchDoc === -1) {
-                this.msg = getMsg.textContent.trim();
-            }
-            if (this.msg !== '') {
-                const event = new Event(Field.MSG_SEND_EVENT, {
-                    bubbles: true
-                });
-                this.emit(event);
-            }
-        getMsg.innerHTML = '';
-    }
-
-    render() {
-        this.el.classList.add('chat-controls');
-        this.el.innerHTML = `
-            <form>
-                    <div contenteditable="true" class="chat-controls__textarea" placeholder="Type a message"></div>
-                    <div class="chat-controls-buttons">
-                        <input type="submit" value="Send" class="chat-controls-buttons__send">
-                        <div class="spinner"></div>
-                        <div class="chat-controls-buttons-wrapper">
-                            <div class="chat-controls-buttons__smiles">
-                                <img src="../assets/img/smile.png">
-                                <div class="chat-controls-buttons__smiles-menu">
-                                    <div class="chat-controls-buttons__smile" data-emoji>😑</div>
-                                    <div class="chat-controls-buttons__smile" data-emoji>😕</div>
-                                    <div class="chat-controls-buttons__smile" data-emoji>😊</div>
-                                    <div class="chat-controls-buttons__smile" data-emoji>😎</div>
-                                    <div class="chat-controls-buttons__smile" data-emoji>💪</div>
-                                </div>
-                            </div>
-                            <input type="file" id="chat-controls-buttons__upload" multiple accept="file_extension">
-                            <label class="chat-controls-buttons__attach" for="chat-controls-buttons__upload"><i class="fa fa-paperclip"></i></label>
-                        </div>
-                    </div>
-            </form>
-        `;
-    }
-
-    initEmoji() {
-        const textArea = this.el.querySelector('.chat-controls__textarea');
-        const emoji = this.el.querySelectorAll('[data-emoji]');
-        for (let i = 0; i < emoji.length; i++) {
-            emoji[i].addEventListener(
-                'click',
-                function () {
-                    textArea.innerHTML += this.innerHTML;
-                }
-            )
+        if (searchImg === -1 && searchDoc === -1) {
+            this.msg = getMsg.textContent.trim();
         }
+        if (this.msg !== '') {
+            const event = new Event(Field.MSG_SEND_EVENT, {
+                bubbles: true
+            });
+            this.emit(event);
+        }
+        getMsg.innerHTML = '';
     }
 
     initFiles() {

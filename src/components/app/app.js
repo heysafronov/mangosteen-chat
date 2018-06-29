@@ -3,6 +3,7 @@ import {Field} from "../field/field";
 import {Message} from "../message/message";
 import {Messages} from "../messages/messages";
 import {Spinner} from "../spinner/spinner";
+import {Emoji} from "../emoji/emoji";
 import '../../../assets/reset/reset.min.css';
 import '../../../assets/fonts/fonts.css';
 import './app.css';
@@ -37,6 +38,10 @@ export class App {
             el: document.createElement('div'),
             parent: this.field.el
         });
+        this.emoji = new Emoji({
+            el: document.createElement('div'),
+            parent: this.field.el
+        });
     }
 
     render() {
@@ -44,6 +49,7 @@ export class App {
         this.messages.render();
         this.field.render();
         this.spinner.render();
+        this.emoji.render();
         this.el.append(
             this.chat.el
         );
@@ -54,9 +60,9 @@ export class App {
     }
 
     init() {
-        this.field.initEmoji();
         this.field.initFiles();
         this.spinner.init();
+        this.emoji.init();
     }
 
     run() {

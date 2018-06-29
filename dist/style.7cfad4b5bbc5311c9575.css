@@ -67,19 +67,6 @@
     display: flex;
 }
 
-.chat-controls-buttons__smiles {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.chat-controls-buttons__smiles img {
-    height: 15px;
-    width: 15px;
-    z-index: 1;
-}
-
 .chat-controls-buttons__send {
     padding: 0 15px;
     background: #75b1e8;
@@ -102,24 +89,6 @@
     margin-left: 17px;
     display: flex;
     align-items: center;
-}
-
-.chat-controls-buttons__smiles-menu {
-    background-color: #fff;
-    display: none;
-    position: absolute;
-    width: 140px;
-    height: 50px;
-    line-height: 50px;
-}
-
-.chat-controls-buttons__smiles:hover .chat-controls-buttons__smiles-menu {
-    display: flex;
-    right: 10px;
-}
-
-.chat-controls-buttons__smile {
-    margin-left: 5px;
 }
 
 #chat-controls-buttons__upload {
@@ -232,6 +201,118 @@
     border-width: 10px;
     top: 10px;
 }
+@-moz-keyframes spinner-loader {
+    0% {
+        background: #fff;
+        border-radius: 5px;
+    }
+    10% {
+        background: #fff;
+        border-radius: 5px;
+    }
+    40% {
+        background: #a8a8a8;
+        border-radius: 5px;
+    }
+}
+@-webkit-keyframes spinner-loader {
+    0% {
+        background: #fff;
+        border-radius: 5px;
+    }
+    10% {
+        background: #fff;
+        border-radius: 5px;
+    }
+    40% {
+        background: #a8a8a8;
+        border-radius: 5px;
+    }
+}
+@keyframes spinner-loader {
+    0% {
+        background: #fff;
+        border-radius: 5px;
+    }
+    10% {
+        background: #fff;
+        border-radius: 5px;
+    }
+    40% {
+        background: #a8a8a8;
+        border-radius: 5px;
+    }
+}
+
+.spinner-loader:not(:required) {
+    -moz-animation: spinner-loader 1500ms 300ms infinite ease-out;
+    -webkit-animation: spinner-loader 1500ms 300ms infinite ease-out;
+    animation: spinner-loader 1500ms 300ms infinite ease-out;
+    background: #fff;
+    display: flex;
+    position: relative;
+    text-indent: -9999px;
+    width: 10px;
+    height: 2px;
+    margin: 0 12px;
+    border-radius: 5px;
+}
+.spinner-loader:not(:required):before, .spinner-loader:not(:required):after {
+    background: #fff;
+    border-radius: 5px;
+    content: 'x200B';
+    display: flex;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+}
+.spinner-loader:not(:required):before {
+    -moz-animation: spinner-loader 1500ms 150ms infinite ease-out;
+    -webkit-animation: spinner-loader 1500ms 150ms infinite ease-out;
+    animation: spinner-loader 1500ms 150ms infinite ease-out;
+    left: -12px;
+}
+.spinner-loader:not(:required):after {
+    -moz-animation: spinner-loader 1500ms 450ms infinite ease-out;
+    -webkit-animation: spinner-loader 1500ms 450ms infinite ease-out;
+    animation: spinner-loader 1500ms 450ms infinite ease-out;
+    right: -12px;
+}
+.emoji {
+    display: flex;
+}
+
+.chat-controls-buttons__smiles {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.chat-controls-buttons__smiles img {
+    height: 15px;
+    width: 15px;
+    z-index: 1;
+}
+
+.chat-controls-buttons__smiles-menu {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.chat-controls-buttons__smiles:hover .chat-controls-buttons__smiles-menu {
+    display: flex;
+    right: 10px;
+}
+
+.chat-controls-buttons__smile {
+    margin-left: 5px;
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -295,4 +376,4 @@ body {
     margin: 50px 0 20px 0;
 }
 
-/*# sourceMappingURL=style.bb5b6243b6208aaa605d.css.map*/
+/*# sourceMappingURL=style.7cfad4b5bbc5311c9575.css.map*/
