@@ -51,6 +51,7 @@ class App {
     init() {
         this.field.initEmoji();
         this.field.initFiles();
+        this.field.initSpinner();
     }
 
     run() {

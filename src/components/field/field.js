@@ -41,6 +41,7 @@ class Field extends EventEmitter {
                     <div contenteditable="true" class="chat-controls__textarea" placeholder="Type a message"></div>
                     <div class="chat-controls-buttons">
                         <input type="submit" value="Send" class="chat-controls-buttons__send">
+                        <div class="spinner-loader__wrapper"></div>
                         <div class="chat-controls-buttons-wrapper">
                             <div class="chat-controls-buttons__smiles">
                                 <img src="../assets/img/smile.png">
@@ -100,6 +101,21 @@ class Field extends EventEmitter {
                     textArea.appendChild(doc);
                 }
             }
+        }
+    }
+
+    initSpinner() {
+        const textArea = this.el.querySelector('.chat-controls__textarea');
+        const spinner = this.el.querySelector('.spinner-loader__wrapper');
+        textArea.addEventListener('keypress', keyPress);
+
+        function keyPress() {
+            spinner.classList.add('spinner-loader');
+            setTimeout(keyUp, 3000);
+        }
+
+        function keyUp() {
+            spinner.classList.remove('spinner-loader');
         }
     }
 }
