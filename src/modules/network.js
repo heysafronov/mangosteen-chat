@@ -1,6 +1,4 @@
-export {Network};
-
-class Network {
+export class Network {
     constructor(url) {
         this.url = url;
     }
