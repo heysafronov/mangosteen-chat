@@ -8,30 +8,30 @@ export class Messages {
     }
 
     template(data) {
-        for (let a = 0; a < data.stack.length; a++) {
-            if (data.stack[a].type === 'me') {
+        data.stack.forEach((item, i) => {
+            if (item.type === 'me') {
                 this.arr.push(`<div class="chat-item chat-item-me">
-                    <img class="chat-item__img" src="${this.data.stack[a].avatar}" alt="avatar">
+                    <img class="chat-item__img" src="${this.data.stack[i].avatar}" alt="avatar">
                         <div class="message">
-                            <span class="message__user-name">${this.data.stack[a].author}</span>
+                            <span class="message__user-name">${this.data.stack[i].author}</span>
                             <i class="fa fa-clock-o"></i>
-                            <time class="message__time">${this.data.stack[a].time}</time>
-                            <p class="message__text">${this.data.stack[a].msg}</p>
+                            <time class="message__time">${this.data.stack[i].time}</time>
+                            <p class="message__text">${this.data.stack[i].msg}</p>
                         </div>
                      </div>`)
             }
-            if (data.stack[a].type === 'other') {
+            if (item.type === 'other') {
                 this.arr.push(`<div class="chat-item chat-item-other">
                         <div class="message">
-                            <span class="message__user-name">${this.data.stack[a].author}</span>
+                            <span class="message__user-name">${this.data.stack[i].author}</span>
                             <i class="fa fa-clock-o"></i>
-                            <time class="message__time">${this.data.stack[a].time}</time>
-                            <p class="message__text">${this.data.stack[a].msg}</p>
+                            <time class="message__time">${this.data.stack[i].time}</time>
+                            <p class="message__text">${this.data.stack[i].msg}</p>
                         </div>
-                        <img class="chat-item__img" src="${this.data.stack[a].avatar}" alt="avatar">
+                        <img class="chat-item__img" src="${this.data.stack[i].avatar}" alt="avatar">
                      </div>`)
             }
-        }
+        });
         return this.arr.join('');
     };
 

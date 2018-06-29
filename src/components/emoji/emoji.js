@@ -25,13 +25,8 @@ export class Emoji {
     init() {
             const textArea = this.parent.querySelector('.chat-controls__textarea');
             const dataEmoji = this.el.querySelectorAll('[data-emoji]');
-            for (let i = 0; i < dataEmoji.length; i++) {
-                dataEmoji[i].addEventListener(
-                    'click',
-                    function () {
-                        textArea.innerHTML += this.innerHTML;
-                    }
-                )
-            }
+            dataEmoji.forEach(item => item.addEventListener('click', function () {
+                textArea.innerHTML += this.innerHTML;
+            }));
     }
 }
