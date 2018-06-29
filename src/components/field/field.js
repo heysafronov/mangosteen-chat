@@ -18,20 +18,19 @@ class Field extends EventEmitter {
 
     onSubmit(evt) {
         evt.preventDefault();
-        const form = evt.target;
-        const getMsg = form.querySelector('.chat-controls__textarea');
+        const getMsg = evt.target.querySelector('.chat-controls__textarea');
         this.msg = getMsg.innerHTML;
         const searchImg = this.msg.search('<img src="data');
         const searchDoc = this.msg.search('<img src="../assets/img/doc.png"');
-        if (this.msg !== '') {
             if (searchImg === -1 && searchDoc === -1) {
-                this.msg = getMsg.innerHTML.replace(/<\/?[^>]+>/g,'');
+                this.msg = getMsg.textContent.trim();
             }
-            const event = new Event(Field.MSG_SEND_EVENT, {
-                bubbles: true
-            });
-            this.emit(event);
-        }
+            if (this.msg !== '') {
+                const event = new Event(Field.MSG_SEND_EVENT, {
+                    bubbles: true
+                });
+                this.emit(event);
+            }
         getMsg.innerHTML = '';
     }
 
