@@ -1,67 +1,67 @@
 .chat-controls {
-    width: 320px;
-    margin-top: 10px;
-    border-top: 1px solid #f6f6f6;
-    padding: 20px 20px 20px 20px;
+  width: 320px;
+  margin-top: 10px;
+  border-top: 1px solid #f6f6f6;
+  padding: 20px 20px 20px 20px;
 }
 
 .chat-controls__textarea {
-    width: auto;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    resize: none;
-    outline: none;
-    max-height: 80px;
-    height: 50px;
-    overflow: auto;
-    color: #777;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+  width: auto;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  max-height: 80px;
+  height: 50px;
+  overflow: auto;
+  color: #777;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .chat-controls-buttons {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .chat-controls-buttons-wrapper {
-    display: flex;
+  display: flex;
 }
 
 .chat-controls-buttons__send {
-    padding: 0 15px;
-    background: #75b1e8;
-    line-height: 25px;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    border: 0;
-    cursor: pointer;
+  padding: 0 15px;
+  background: #75b1e8;
+  line-height: 25px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
 }
 
 .chat-controls-buttons__send:focus {
-    outline: none;
+  outline: none;
 }
 
 .chat-controls__textarea img {
-    height: 30px;
-    vertical-align: middle;
+  height: 30px;
+  vertical-align: middle;
 }
 
 .message__newImg {
-    max-width: 150px;
+  max-width: 150px;
 }
 
-[contenteditable=true]:empty:before{
-    content: attr(placeholder);
-    color: #999;
-    font-family: monospace;
-    letter-spacing: 0.015em;
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  color: #999;
+  font-family: monospace;
+  letter-spacing: 0.015em;
 }
 
 [placeholder]:empty:focus:before {
-    content: "";
+  content: "";
 }

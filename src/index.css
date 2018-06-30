@@ -1,6 +1,6 @@
-@import url('../assets/reset/reset.min.css');
-@import url('../assets/fonts/fonts.css');
-@import url('./components/app/app.css');
-@import url('./components/chat/chat.css');
-@import url('./components/messages/messages.css');
-@import url('./components/field/field.css');
+@import url("../assets/reset/reset.min.css");
+@import url("../assets/fonts/fonts.css");
+@import url("./components/app/app.css");
+@import url("./components/chat/chat.css");
+@import url("./components/messages/messages.css");
+@import url("./components/field/field.css");

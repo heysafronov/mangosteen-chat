@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
-*, *:before, *:after {
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 body {
-    background: #C5DDEB;
-    font: 14px/20px "Lato", Arial, sans-serif;
-    margin: 50px 0 20px 0;
+  background: #c5ddeb;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  margin: 50px 0 20px 0;
 }
