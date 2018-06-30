@@ -9,7 +9,7 @@ export class Emoji {
   render() {
     this.el.classList.add("chat-controls-buttons__smiles");
     this.el.innerHTML = `
-      <img src="../assets/img/smile.png">
+      <img src="../src/assets/img/smile.png">
         <div class="chat-controls-buttons__smiles-menu">
           <div class="chat-controls-buttons__smile" data-emoji>😑</div>
           <div class="chat-controls-buttons__smile" data-emoji>😕</div>

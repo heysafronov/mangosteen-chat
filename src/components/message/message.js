@@ -14,7 +14,7 @@ export class Message {
         "en-US",
         this.optionsDate
       )}`,
-      avatar: "../assets/img/mark.png"
+      avatar: "../src/assets/img/mark.png"
     };
   }
 
