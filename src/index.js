@@ -1,5 +1,5 @@
-import { App } from "./components/app/app";
-import { Network } from "./modules/network";
+import { App } from "components/app/app";
+import { Network } from "modules/network";
 
 const element = document.querySelector("#chat");
 const network = new Network("https://mangosteen-chat.firebaseio.com/chat.json");

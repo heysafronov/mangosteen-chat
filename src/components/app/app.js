@@ -1,12 +1,12 @@
-import { Chat } from "../chat/chat";
-import { Field } from "../field/field";
-import { Spinner } from "../spinner/spinner";
-import { Emoji } from "../emoji/emoji";
-import { Files } from "../files/files";
-import { Message } from "../message/message";
-import { Messages } from "../messages/messages";
-import "../../../assets/reset/reset.min.css";
-import "../../../assets/fonts/fonts.css";
+import { Chat } from "components/chat/chat";
+import { Field } from "components/field/field";
+import { Spinner } from "components/spinner/spinner";
+import { Emoji } from "components/emoji/emoji";
+import { Files } from "components/files/files";
+import { Message } from "components/message/message";
+import { Messages } from "components/messages/messages";
+import "assets/reset/reset.min.css";
+import "assets/fonts/fonts.css";
 import "./app.css";
 
 export class App {

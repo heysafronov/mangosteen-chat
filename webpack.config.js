@@ -10,6 +10,13 @@ module.exports = {
     filename: "bundle.[chunkhash].js"
   },
   mode: "production",
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, "src/components/"),
+      assets: path.resolve(__dirname, "assets/"),
+      modules: path.resolve(__dirname, "src/modules/")
+    }
+  },
   module: {
     rules: [
       {
