@@ -7,7 +7,7 @@ Single page application. Vanilla JavaScript Components.
 Demo is available on this [page](https://heysafronov.github.io/mangosteen-chat/dist/).
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/heysafronov/mangosteen-chat/master/assets/img/mangosteen-chat.png">
+<img src="https://raw.githubusercontent.com/heysafronov/mangosteen-chat/master/src/assets/img/mangosteen-chat.png">
 
 ## Back-end
 Using [Firebase](https://firebase.google.com/) as simple backend.

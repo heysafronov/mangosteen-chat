@@ -42,7 +42,7 @@ export class Files {
           textArea.appendChild(img);
         } else {
           const doc = document.createElement("img");
-          doc.src = "../assets/img/doc.png";
+          doc.src = "../src/assets/img/doc.png";
           doc.classList.add("message__newImg");
           textArea.appendChild(doc);
         }
