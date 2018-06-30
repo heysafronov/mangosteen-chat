@@ -14,12 +14,12 @@ export class Field extends EventEmitter {
       <form>
         <div contenteditable="true" class="chat-controls__textarea" placeholder="Type a message"></div>
         <div class="chat-controls-buttons">
-        <input type="submit" value="Send" class="chat-controls-buttons__send">
-        <div class="spinner"></div>
-        <div class="chat-controls-buttons-wrapper">
-        <div class="emoji"></div>
-        <div class="files"></div>
-        </div>
+          <input type="submit" value="Send" class="chat-controls-buttons__send">
+          <div class="spinner"></div>
+          <div class="chat-controls-buttons-wrapper">
+            <div class="emoji"></div>
+            <div class="files"></div>
+          </div>
         </div>
       </form>
     `;
