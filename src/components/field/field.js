@@ -33,10 +33,8 @@ export class Field extends EventEmitter {
     evt.preventDefault();
     const getMsg = evt.target.querySelector(".chat-controls__textarea");
     this.msg = getMsg.innerHTML;
-    const searchImg = this.msg.search('<img src="data');
-    const searchDoc = this.msg.search('<img src="../assets/img/doc.png"');
-    if (searchImg === -1 && searchDoc === -1) {
-      this.msg = getMsg.textContent.trim();
+    if (this.msg.indexOf("message__newImg") === -1) {
+      this.msg = getMsg.textContent.trim().replace(/<\/?[^>]+>/g, "");
     }
     if (this.msg !== "") {
       const event = new Event(Field.MSG_SEND_EVENT, {
