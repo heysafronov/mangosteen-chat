@@ -1,4 +1,4 @@
-# Interactive Web Chat
+# JavaScript Chat Web Application
 >Note. This application is in beta phase. However, it is workable and safe.
 
 Single page application. Vanilla JavaScript Components.
